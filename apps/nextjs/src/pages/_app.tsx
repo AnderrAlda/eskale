@@ -6,7 +6,10 @@ import { trpc } from "../utils/trpc";
 
 const MyApp: AppType = ({ Component, pageProps: { ...pageProps } }) => {
   return (
-    <ClerkProvider {...pageProps}>
+    <ClerkProvider
+      frontendApi="pk_test_cHJlc2VudC1zaHJldy05Ny5jbGVyay5hY2NvdW50cy5kZXYk"
+      {...pageProps}
+    >
       <Component {...pageProps} />
     </ClerkProvider>
   );
